@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+.container 
+{
+    display: flex;
+    align-items: right;    /* Centra verticalmente */
+    justify-content: right; /* Centra horizontalmente */
+    gap: 30px;              /* Espacio entre flor y texto */
+    margin-top: 50px;       /* Opcional, para que baje un poco */
+}
+.mensaje p 
+{
+    font-size: 1.2em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 1px 1px 3px #ffffff;
+    font-family: 'Pacifico', cursive;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+}
+.heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ff1500;
+    transform: rotate(-45deg);
+    animation: float 6s infinite;
+}
+.heart::before,
+.heart::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ff1500;
+    border-radius: 50%;
+}
+.heart::before { top: -10px; left: 0; }
+.heart::after { left: 10px; top: 0; }
+
+/* Posición individual de cada corazón */
+.heart-1 { left: 10%; top: 200px; animation-delay: 0s; }
+.heart-2 { left: 30%; top: 150px; animation-delay: 1s; }
+.heart-3 { left: 50%; top: 100px; animation-delay: 2s; }
+.heart-4 { left: 70%; top: 180px; animation-delay: 3s; }
+.heart-5 { left: 90%; top: 130px; animation-delay: 4s; }
+
+/* Animación */
+@keyframes float {
+    0% { transform: translateY(0) rotate(-45deg); opacity: 1; }
+    50% { opacity: 0.6; }
+    100% { transform: translateY(-400px) rotate(-45deg); opacity: 0; }
+}
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flor Amarilla</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onclick="PlayAudio()">
+    <audio id="musica1" autoplay  >
+        <source src="Flores Amarillas2.mp3" type="audio/mpeg" >
+        <source src="Flores Amarillas2.ogv" type="audio">
+
+    </audio>
+	
+   
+
+    <div class="sunflower">
+        <div class="flower_wrapper">
+            <div class="flower_stem"></div>
+            <div class="flower_center"></div>
+            <div class="flower_petal flower_petal-1"></div>
+            <div class="flower_petal flower_petal-2"></div>
+            <div class="flower_petal flower_petal-3"></div>
+            <div class="flower_petal flower_petal-4"></div>
+            <div class="flower_petal flower_petal-5"></div>
+            <div class="flower_petal flower_petal-6"></div>
+            <div class="flower_petal flower_petal-7"></div>
+            <div class="flower_petal flower_petal-8"></div>
+            <div class="flower_petal flower_petal-9"></div>
+            <div class="flower_petal flower_petal-10"></div>
+            <div class="flower_petal flower_petal-11"></div>
+            <div class="flower_petal flower_petal-12"></div>
+
+            <div class="flower_leaf flower_leaf-1"></div>
+            <div class="flower_leaf flower_leaf-2"></div>
+
+            <div class="flower_light flower_light-1"></div>
+            <div class="flower_light flower_light-2"></div>
+            <div class="flower_light flower_light-3"></div>
+            <div class="flower_light flower_light-4"></div>
+            <div class="flower_light flower_light-5"></div>
+            <div class="flower_light flower_light-6"></div>
+            <div class="flower_light flower_light-7"></div>
+            <div class="flower_light flower_light-8"></div>
+        </div>
+    </div> 
+
+    <div class="mensaje">
+            <p>🌼 Amo tu sonrisa ❤️</p>
+        </div>
+    </div>
+<div class="heart heart-1"></div>
+    <div class="heart heart-2"></div>
+    <div class="heart heart-3"></div>
+    <div class="heart heart-4"></div>
+    <div class="heart heart-5"></div>
+</body>
+
+    </div>
+    <div class="light light-1"></div>
+    <div class="light light-2"></div>
+    <div class="light light-3"></div>
+    <div class="light light-4"></div>
+    <div class="light light-5"></div>
+    <div class="light light-6"></div>
+    <div class="light light-7"></div>
+    <div class="light light-8"></div>
+    <div class="light light-9"></div>
+    <div class="light light-10"></div>
+    <div class="light light-11"></div>
+    <div class="light light-12"></div>
+    
+    <p id="text">Con cariño de Deivid❤️</p>
+</body>
+<script>
+    function PlayAudio(){
+       document.getElementById("musica1").play(); 
+    }
+</script>
+</html>
